@@ -22,5 +22,5 @@ resource "azurerm_virtual_network_peering" "peering" {
   resource_group_name       = each.value.rg_name
   virtual_network_name      = each.value.name_vnet
     remote_virtual_network_id = each.value.remote_virtual_network_id
-    depends_on = [ azurerm_virtual_network.virtual_netowrk_name ]
+    
 }
